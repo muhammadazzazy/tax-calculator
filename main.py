@@ -35,7 +35,7 @@ def main() -> None:
                 tax_rate: float = float(user_input)
 
             if tax_rate < 0:
-                print('Invalid tax rate...')
+                print('Please enter a valid tax rate...')
                 continue
 
             tax: float = round(tax_rate * cost, 2)
@@ -46,7 +46,7 @@ def main() -> None:
                 f'The tax is {currency_symbol}{tax:.2f}, and the total cost with tax is {currency_symbol}{total_cost:.2f}.')
 
         except ValueError:
-            print('Please enter valid input...')
+            print('Please enter some valid input...')
             continue
 
         except KeyboardInterrupt:
