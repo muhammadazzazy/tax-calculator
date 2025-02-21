@@ -12,8 +12,6 @@ def main() -> None:
                 print(exit_message)
                 exit()
 
-            cost: float = float(user_input[1:])
-
             currency_symbols: list[str] = [
                 ch for ch in user_input if category(ch) == 'Sc']
 
@@ -23,6 +21,8 @@ def main() -> None:
                 print('Please enter a valid cost...')
                 continue
 
+            cost: float = float(user_input[1:])
+            
             if cost <= 0:
                 print('Please enter a valid cost...')
                 continue
