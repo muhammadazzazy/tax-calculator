@@ -43,7 +43,7 @@ def main() -> None:
             total_cost: float = round(cost + tax, 2)
 
             print(
-                f'The tax is {currency_symbol}{tax:.2f}, and the total cost with tax is {currency_symbol}{total_cost:.2f}.')
+                f'The tax is {currency_symbol}{tax:,.2f}, and the total cost with tax is {currency_symbol}{total_cost:,.2f}.')
 
         except ValueError:
             print('Please enter some valid input...')
